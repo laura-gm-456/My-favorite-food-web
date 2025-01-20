@@ -1,0 +1,261 @@
+ * {
+    margin: 0;
+    padding: 0;
+  }
+
+.title {
+  display: flex;
+  background:#e3ffb4;
+  text-align: center;
+  padding: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  color: #847258;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.banner {
+  background-color: #fddca3;
+  width: 100%;
+  margin: 10px 0 0 0px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+  
+img {
+  display: flex;
+  width: 60%;
+  height: 400px;
+  display: inline-block;
+}
+
+.ingredientsContainer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 750px;
+  align-items: flex-start;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 30px;
+  margin: 2px 0 0 140px;
+  background-color: #e3ffb4;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ingSection {
+  width: 80%;
+  margin: 30px 
+}
+ 
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color:  #847258;
+  text-align: center;
+  
+}
+ 
+.ingSection h3 {
+  margin: 20px 0 0;
+  font-size: 18px;
+  color: #625f5f;
+}
+
+.ingredients {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.column label {
+  font-size: 14px;
+  color: #555;
+}
+
+input[type="checkbox"] {
+  width: 15px; 
+  height: 15px; 
+  transform: scale(1.5); 
+  margin-right: 15px; 
+  cursor: pointer;  
+}
+
+.timerContainer {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 110px;
+  top: 600px;
+  width: 180px;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+  padding: 50px;
+  border-radius: 20px;
+  background-color: #e3ffb4;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+.timerTitle {
+  font-size: 24px;
+  color: #847258;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.timerDisplay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.timeValue {
+  font-size: 24px;
+  font-weight: bold;
+  color: #4a4a4a;
+}
+
+.timeButtons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.timeButton {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #aed581; 
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.timeButton:hover {
+  background-color: #8bc34a; 
+}
+
+.timeButton.active {
+  background-color: #90ee90;
+  color: white;
+}
+
+.actionButtons {
+  display: flex; 
+  justify-content: center; 
+  gap: 10px; 
+  margin-top: 20px; 
+}
+
+.setButton {
+  padding: 10px 20px;
+  border: 2px solid #8bc34a;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #8bc34a;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.setButton:hover {
+  background-color: #8bc34a;
+  color: #fff;
+}
+
+.resetButton {
+  padding: 10px 20px;
+  border: 2px solid #8bc34a;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #8bc34a;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.resetButton:hover {
+  background-color: #8bc34a;
+  color: #fff;
+}
+
+.preparationSection {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #625f5f;
+  margin: 50px;
+  border: 3px solid #c7e2a7; 
+  padding: 70px; 
+  border-radius: 20px; 
+  margin: 30px; 
+}
+  
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #847258;
+  margin-bottom: 30px
+}
+
+h3 {
+  margin-bottom: 15px
+}
+  
+.steps {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+  
+.stepNumber {
+  padding: 10px;
+  text-align: center;
+}
+
+.footer {
+  background: #aed581;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+  
+.footer p {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #5e5241;
+}
+  
+.socialIcons img {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+  
+@media (max-width: 768px) {
+  .banner
+  .ingredientsContainer,
+  .timer-container
+  .preparationSection
+  .footer {
+      flex-direction: column;
+      text-align: center;
+      gap: 20px;
+  }
+
+  .footerText {
+      text-align: center;
+  }
+} 

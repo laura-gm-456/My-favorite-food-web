@@ -1,0 +1,4 @@
+
+"scripts" : {
+  "build:sass": "sass --watch src/scss:dist"
+}
